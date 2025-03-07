@@ -1,0 +1,47 @@
+<div style="margin-bottom: 10vh">
+  <div>
+    <ngx-charts-gauge
+      [results]="graphData"
+      [min]="0"
+      [max]="100"
+      [angleSpan]="240"
+      [startAngle]="-120"
+      [legend]="true"
+      [scheme]="colorScheme"
+      (select)="onSelect($event)"
+      [units]="'Clinical'"
+      [showAxis]="false"
+    >
+    </ngx-charts-gauge>
+
+<!--    <div class="legend-section">-->
+<!--      <div> <span class="material-symbols-outlined" style="color: lawngreen">fiber_manual_record</span> Good</div>-->
+<!--      <div> <span class="material-symbols-outlined" style="color: red;">fiber_manual_record</span> Need Improvement</div>-->
+<!--      <div> <span class="material-symbols-outlined" style="color: gray">fiber_manual_record</span> No Data</div>-->
+<!--    </div>-->
+  </div>
+
+</div>
+
+<div class="chart-container">
+  <ngx-charts-pie-chart
+    [results]="graphData"
+    [scheme]="colorScheme"
+    [view]="[200, 200]"
+    [doughnut]="true"
+    [labels]="false"
+    [legend]="false"
+    (select)="onSelect($event)"
+  >
+  </ngx-charts-pie-chart>
+
+  <div class="center-label">
+    <h5><span>Clinical</span> <br> <span>{{currentValue}}</span></h5>
+  </div>
+  <div class="legend-section">
+    <div> <span class="material-symbols-outlined" style="color: lawngreen">fiber_manual_record</span> Good</div>
+    <div> <span class="material-symbols-outlined" style="color: red;">fiber_manual_record</span> Need Improvement</div>
+    <div> <span class="material-symbols-outlined" style="color: gray">fiber_manual_record</span> No Data</div>
+  </div>
+</div>
+

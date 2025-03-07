@@ -1,0 +1,42 @@
+.legend-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+}
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.chart-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding-left: 40px;
+}
+
+.center-label {
+  position: absolute;
+  top: 50%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #e87e56;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
