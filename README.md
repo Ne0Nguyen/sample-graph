@@ -6,6 +6,10 @@ The library for the chart is `NgxApexChart` with `radialBarChart` but still in p
 
 The main code folder is the inside `sample-graph` folder
 
+For easier to preview the code without setup and build, I have deployed it to vercel. You can check the link below
+
+ `https://sample-graph-kappa.vercel.app/`
+
 ## Development server
 Open Terminal
 
